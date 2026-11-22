@@ -30,7 +30,7 @@ createRoot(document.getElementById('root')).render(
   <StrictMode>
     <I18nProvider>
       <ToastProvider>
-        <BrowserRouter>
+        <BrowserRouter basename={import.meta.env.BASE_URL}>
           <Suspense fallback={<div className="container" style={{ padding: 40 }}>Loading…</div>}>
             <Routes>
               <Route path="/" element={<Landing />} />

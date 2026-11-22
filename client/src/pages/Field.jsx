@@ -10,7 +10,13 @@ export default function Field() {
   return (
     <div style={{ minHeight: '100svh' }}>
       <header className="site-head"><div className="container">
-        <span className="logo"><img src="/favicon.svg" width="30" height="30" alt="" /><span>Sethu<small>Booth agent</small></span></span>
+        <span className="logo">
+          <img src="/images/voiz-of-aram-logo.jpg" alt="Voiz of Aram" className="logo-badge" style={{ height: 34 }} />
+          <span className="logo-text">
+            <span className="brand-name">Voiz of Aram</span>
+            <small className="brand-tagline">Booth agent</small>
+          </span>
+        </span>
         <nav className="site-nav"><LangToggle /></nav>
       </div></header>
       <main className="container" style={{ padding: '20px var(--gutter) 60px' }}>

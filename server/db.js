@@ -126,8 +126,10 @@ function seed(db) {
     db.prepare("UPDATE users SET full_name = 'demo-candidate' WHERE mobile = '9000000000' OR is_demo = 1").run();
   }
   if (!exists.get('9999999999')) {
-    insert.run('9999999999', 'Sethu Admin', null, null, null, null, null, null, '[]',
+    insert.run('9999999999', 'Voiz of Aram Admin', null, null, null, null, null, null, '[]',
       hashSecret(process.env.SETHU_ADMIN_PASSCODE || 'admin1234'), 'active', 1, 0, null);
+  } else {
+    db.prepare("UPDATE users SET full_name = 'Voiz of Aram Admin' WHERE mobile = '9999999999'").run();
   }
 }
 

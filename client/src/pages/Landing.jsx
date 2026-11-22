@@ -22,13 +22,13 @@ const COPY = {
     lead: 'Load the electoral roll for your booths, mark who is with you as your team goes door to door, and see each morning which streets still need a visit. In Tamil and English.',
     cta: 'Start free', demo: 'Open the demo', note: 'Booth statistics are free. You pay only to unlock voter names.',
     facts: [['234', 'assembly constituencies'], ['38', 'districts'], ['68,000+', 'polling stations'], ['6.2 crore', 'voters (ECI, 2024)']],
-    s1k: 'Step 1', s1t: 'Start from the official roll.', s1d: 'Upload the roll PDF for each booth, or photograph the pages. Sethu reads every voter box, Tamil or English, and shows you a table to check before anything is saved. Digital PDFs are read exactly; scans and photos are read on your own device, in Tamil and English.',
+    s1k: 'Step 1', s1t: 'Start from the official roll.', s1d: 'Upload the roll PDF for each booth, or photograph the pages. Voiz of Aram reads every voter box, Tamil or English, and shows you a table to check before anything is saved. Digital PDFs are read exactly; scans and photos are read on your own device, in Tamil and English.',
     s1b: ['Serial number, EPIC, name, relative, house, age, gender', 'Rows that need a second look are highlighted', 'Re-import a revised roll: existing voters are updated, not duplicated'],
     s2k: 'Step 2', s2t: 'Door to door, with the phone already in your pocket.', s2d: 'Send each booth agent a link on WhatsApp. No app to install, no password. They photograph a voter ID card, the details fill in, they note how the conversation went and save. If the voter is already on the roll, the record is updated, not doubled.',
     s2b: ['Works on any Android phone with a browser', 'The photo is read and discarded, never stored', 'Mobile numbers saved only with the voter’s consent'],
     s3k: 'Step 3', s3t: 'Know which booths need you this week.', s3d: 'Every tag your team records rolls up into a strength score for each booth. The map shows where you are strong, where it is close, and where nobody has knocked yet.',
     s4k: 'Step 4', s4t: 'Remember every household.', s4d: 'Open a voter to see their family on the same roll, past notes and how they lean. Call or WhatsApp from the same screen. Plan one visit per house, not five.',
-    honest: 'What Sethu does not do', honestList: ['We do not sell voter lists. You bring the roll you are entitled to; we help you use it.', 'We do not send messages without your approval. Every broadcast is reviewed for Model Code of Conduct and DLT rules.', 'We do not hide prices. You see the full amount, with GST, before you pay.'],
+    honest: 'What Voiz of Aram does not do', honestList: ['We do not sell voter lists. You bring the roll you are entitled to; we help you use it.', 'We do not send messages without your approval. Every broadcast is reviewed for Model Code of Conduct and DLT rules.', 'We do not hide prices. You see the full amount, with GST, before you pay.'],
     also: 'Also included', alsoList: [['Segments & outreach', 'First-time voters in booth 12, women over 60: build the list, see reach and cost, send by SMS, WhatsApp or voice.'], ['Team board', 'Tasks per booth, assigned to agents, moved from to-do to done.'], ['Booth reports', 'One printable page per booth for the committee meeting.'], ['Audit trail', 'Imports, exports and payments are logged for DPDP Act accountability.']],
     priceT: 'Pay by booth count. Once.', priceD: 'One payment covers the campaign. Add booths later; the price changes only when you cross a slab.',
     faqT: 'Questions we get asked',
@@ -37,11 +37,11 @@ const COPY = {
       ['How accurate is the reading?', 'Digital PDFs are read exactly from their text. Scanned pages are read by OCR on your own device. On clean scans it finds nearly every voter box and gets ages, house numbers and gender right almost every time; Tamil names sometimes need a letter fixed. You always review before saving.'],
       ['Which elections is it for?', 'Assembly constituencies, and rural and urban local body elections: panchayat, municipality and corporation wards.'],
       ['Do booth agents need an account?', 'No. You send each agent a personal link from the Team page. It works for 60 days and stops working the moment you remove them.'],
-      ['Is this legal?', 'Electoral rolls are public documents meant for candidates’ use. You must use them only for your campaign, not sell or share them, and follow the DPDP Act 2023. Sethu records consent and logs exports to help you show that.'],
+      ['Is this legal?', 'Electoral rolls are public documents meant for candidates’ use. You must use them only for your campaign, not sell or share them, and follow the DPDP Act 2023. Voiz of Aram records consent and logs exports to help you show that.'],
       ['Is there a refund?', 'If your plan is not active within one working day of payment, you get a full refund.'],
     ],
     endT: 'The roll is public. What you do with it is the campaign.', endD: 'Set up your booths in two minutes and try the import on one part tonight.',
-    credits: 'Photographs from Pexels: Alen J (Chennai), Roman Saienko (Thanjavur), Renjith Tomy Pkm (Pollachi), Ahila devi Manoharan and Subbu Rayan (Madurai). App screenshots show sample data.',
+    credits: 'Voiz of Aram · Public Voice. Real Action. Photographs from Pexels: Alen J (Chennai), Roman Saienko (Thanjavur), Renjith Tomy Pkm (Pollachi), Ahila devi Manoharan and Subbu Rayan (Madurai). App screenshots show sample data.',
   },
   ta: {
     eyebrow: 'தமிழ்நாட்டு வேட்பாளர்கள் மற்றும் பிரச்சாரக் குழுக்களுக்கு',
@@ -49,13 +49,13 @@ const COPY = {
     lead: 'உங்கள் சாவடிகளின் வாக்காளர் பட்டியலை ஏற்றுங்கள். உங்கள் குழு வீடு வீடாகச் செல்லும்போது யார் உங்களுடன் இருக்கிறார்கள் என்று குறியுங்கள். எந்தத் தெருக்களுக்கு இன்னும் செல்ல வேண்டும் என்று ஒவ்வொரு காலையும் பாருங்கள். தமிழிலும் ஆங்கிலத்திலும்.',
     cta: 'இலவசமாகத் தொடங்குக', demo: 'டெமோவைத் திற', note: 'சாவடி புள்ளிவிவரங்கள் இலவசம். வாக்காளர் பெயர்களைத் திறக்க மட்டும் கட்டணம்.',
     facts: [['234', 'சட்டமன்றத் தொகுதிகள்'], ['38', 'மாவட்டங்கள்'], ['68,000+', 'வாக்குச்சாவடிகள்'], ['6.2 கோடி', 'வாக்காளர்கள் (ECI, 2024)']],
-    s1k: 'படி 1', s1t: 'அதிகாரப்பூர்வ வாக்காளர் பட்டியலிலிருந்து தொடங்குங்கள்.', s1d: 'ஒவ்வொரு சாவடிக்கும் பட்டியல் PDF-ஐப் பதிவேற்றுங்கள், அல்லது பக்கங்களைப் புகைப்படம் எடுங்கள். தமிழோ ஆங்கிலமோ, ஒவ்வொரு வாக்காளர் பெட்டியையும் சேது படித்து, சேமிக்கும் முன் நீங்கள் சரிபார்க்க ஒரு அட்டவணையைக் காட்டும்.',
+    s1k: 'படி 1', s1t: 'அதிகாரப்பூர்வ வாக்காளர் பட்டியலிலிருந்து தொடங்குங்கள்.', s1d: 'ஒவ்வொரு சாவடிக்கும் பட்டியல் PDF-ஐப் பதிவேற்றுங்கள், அல்லது பக்கங்களைப் புகைப்படம் எடுங்கள். தமிழோ ஆங்கிலமோ, ஒவ்வொரு வாக்காளர் பெட்டியையும் Voiz of Aram படித்து, சேமிக்கும் முன் நீங்கள் சரிபார்க்க ஒரு அட்டவணையைக் காட்டும்.',
     s1b: ['வரிசை எண், EPIC, பெயர், உறவினர், வீட்டு எண், வயது, பாலினம்', 'மீண்டும் பார்க்க வேண்டிய வரிசைகள் குறிக்கப்படும்', 'திருத்திய பட்டியலை மீண்டும் ஏற்றினால், இருப்பவை புதுப்பிக்கப்படும், இரட்டிப்பாகாது'],
     s2k: 'படி 2', s2t: 'வீடு வீடாக, உங்கள் பையில் இருக்கும் கைபேசியுடன்.', s2d: 'ஒவ்வொரு சாவடி முகவருக்கும் வாட்ஸ்அப்பில் ஒரு இணைப்பை அனுப்புங்கள். செயலி நிறுவத் தேவையில்லை, கடவுச்சொல் இல்லை. வாக்காளர் அட்டையைப் புகைப்படம் எடுத்தால் விவரங்கள் தானாக நிரம்பும்; பேச்சு எப்படி இருந்தது என்று குறித்துச் சேமிக்கலாம்.',
     s2b: ['உலாவி உள்ள எந்த ஆண்ட்ராய்டு கைபேசியிலும் இயங்கும்', 'புகைப்படம் படிக்கப்பட்டதும் நீக்கப்படும், சேமிக்கப்படாது', 'வாக்காளரின் ஒப்புதலுடன் மட்டுமே கைபேசி எண் சேமிக்கப்படும்'],
     s3k: 'படி 3', s3t: 'இந்த வாரம் எந்தச் சாவடிகளுக்கு நீங்கள் தேவை என்று அறியுங்கள்.', s3d: 'உங்கள் குழு பதிவு செய்யும் ஒவ்வொரு குறியும் சாவடியின் வலிமை மதிப்பெண்ணாக மாறும். எங்கு வலுவாக இருக்கிறீர்கள், எங்கு போட்டி நெருக்கமாக உள்ளது, எங்கு யாரும் இன்னும் செல்லவில்லை என்று வரைபடம் காட்டும்.',
     s4k: 'படி 4', s4t: 'ஒவ்வொரு குடும்பத்தையும் நினைவில் வையுங்கள்.', s4d: 'ஒரு வாக்காளரைத் திறந்தால், அதே பட்டியலில் உள்ள அவர் குடும்பம், முந்தைய குறிப்புகள், அவர் சாய்வு எல்லாம் தெரியும். அதே திரையிலிருந்து அழைக்கலாம் அல்லது வாட்ஸ்அப் செய்யலாம்.',
-    honest: 'சேது செய்யாதவை', honestList: ['நாங்கள் வாக்காளர் பட்டியலை விற்பதில்லை. உங்களுக்கு உரிமையுள்ள பட்டியலை நீங்கள் கொண்டு வருகிறீர்கள்; அதைப் பயன்படுத்த நாங்கள் உதவுகிறோம்.', 'உங்கள் ஒப்புதல் இல்லாமல் செய்திகளை அனுப்புவதில்லை. ஒவ்வொரு செய்தியும் நடத்தை விதிகள் மற்றும் DLT விதிகளுக்காகச் சரிபார்க்கப்படும்.', 'விலையை மறைப்பதில்லை. செலுத்தும் முன் GST உட்பட முழுத் தொகையும் தெரியும்.'],
+    honest: 'Voiz of Aram செய்யாதவை', honestList: ['நாங்கள் வாக்காளர் பட்டியலை விற்பதில்லை. உங்களுக்கு உரிமையுள்ள பட்டியலை நீங்கள் கொண்டு வருகிறீர்கள்; அதைப் பயன்படுத்த நாங்கள் உதவுகிறோம்.', 'உங்கள் ஒப்புதல் இல்லாமல் செய்திகளை அனுப்புவதில்லை. ஒவ்வொரு செய்தியும் நடத்தை விதிகள் மற்றும் DLT விதிகளுக்காகச் சரிபார்க்கப்படும்.', 'விலையை மறைப்பதில்லை. செலுத்தும் முன் GST உட்பட முழுத் தொகையும் தெரியும்.'],
     also: 'இவையும் உண்டு', alsoList: [['பிரிவுகள் & தொடர்பு', 'சாவடி 12-இன் முதல்முறை வாக்காளர்கள், 60 வயதுக்கு மேற்பட்ட பெண்கள்: பட்டியலை உருவாக்கி, செலவைப் பார்த்து, SMS, வாட்ஸ்அப் அல்லது குரல் அழைப்பில் அனுப்புங்கள்.'], ['குழுப் பலகை', 'சாவடி வாரியான பணிகள், முகவர்களுக்கு ஒதுக்கீடு.'], ['சாவடி அறிக்கை', 'குழுக் கூட்டத்துக்கு ஒரு பக்க அச்சு அறிக்கை.'], ['தணிக்கைப் பதிவு', 'இறக்குமதி, ஏற்றுமதி, கட்டணம் அனைத்தும் DPDP சட்டத்துக்காகப் பதிவு செய்யப்படும்.']],
     priceT: 'சாவடி எண்ணிக்கைப்படி ஒரே முறை கட்டணம்.', priceD: 'பிரச்சாரம் முழுவதற்கும் ஒரே கட்டணம். பின்னர் சாவடிகளைச் சேர்க்கலாம்.',
     faqT: 'எங்களிடம் கேட்கப்படும் கேள்விகள்',
@@ -68,7 +68,7 @@ const COPY = {
       ['பணம் திரும்பக் கிடைக்குமா?', 'செலுத்திய ஒரு வேலை நாளுக்குள் திட்டம் செயல்படாவிட்டால் முழுத் தொகையும் திருப்பித் தரப்படும்.'],
     ],
     endT: 'பட்டியல் பொதுவானது. அதைக் கொண்டு நீங்கள் செய்வதுதான் பிரச்சாரம்.', endD: 'இரண்டு நிமிடங்களில் சாவடிகளை அமைத்து, இன்றிரவே ஒரு பாகத்தை ஏற்றிப் பாருங்கள்.',
-    credits: 'புகைப்படங்கள் Pexels: Alen J (சென்னை), Roman Saienko (தஞ்சாவூர்), Renjith Tomy Pkm (பொள்ளாச்சி), Ahila devi Manoharan, Subbu Rayan (மதுரை). செயலித் திரைப்படங்கள் மாதிரித் தரவைக் காட்டுகின்றன.',
+    credits: 'Voiz of Aram · Public Voice. Real Action. புகைப்படங்கள் Pexels: Alen J (சென்னை), Roman Saienko (தஞ்சாவூர்), Renjith Tomy Pkm (பொள்ளாச்சி), Ahila devi Manoharan, Subbu Rayan (மதுரை). செயலித் திரைப்படங்கள் மாதிரித் தரவைக் காட்டுகின்றன.',
   },
 };
 
@@ -226,7 +226,7 @@ export default function Landing() {
       <footer className="site-foot">
         <div className="container stack">
           <div className="row between">
-            <span>© 2026 Sethu · Chennai. {t('footer_note')}</span>
+            <span>© 2026 Voiz of Aram · Chennai. {t('footer_note')}</span>
             <span className="row"><Link to="/login">{t('nav_signin')}</Link><Link to="/register">{t('nav_register')}</Link></span>
           </div>
           <p className="small" style={{ margin: 0 }}>{c.credits}</p>

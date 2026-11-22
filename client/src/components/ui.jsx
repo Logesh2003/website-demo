@@ -38,9 +38,12 @@ export function Icon({ name, size = 20, ...rest }) {
 export function Logo({ to = '/' }) {
   const { t } = useI18n();
   return (
-    <Link to={to} className="logo" aria-label="Sethu home">
-      <img src="/favicon.svg" width="34" height="34" alt="" />
-      <span>{t('brand')}<small>{t('tagline')}</small></span>
+    <Link to={to} className="logo" aria-label="Voiz of Aram home">
+      <img src="/images/voiz-of-aram-logo.jpg" alt="Voiz of Aram" className="logo-badge" />
+      <span className="logo-text">
+        <span className="brand-name">{t('brand')}</span>
+        <small className="brand-tagline">{t('tagline')}</small>
+      </span>
     </Link>
   );
 }

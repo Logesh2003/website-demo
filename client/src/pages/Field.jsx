@@ -1,5 +1,5 @@
 import { useParams } from 'react-router-dom';
-import { api } from '../api.js';
+import { api, asset } from '../api.js';
 import { useAsync, LangToggle } from '../components/ui.jsx';
 import Capture from '../components/Capture.jsx';
 
@@ -11,7 +11,7 @@ export default function Field() {
     <div style={{ minHeight: '100svh' }}>
       <header className="site-head"><div className="container">
         <span className="logo">
-          <img src="/images/voiz-of-aram-logo.jpg" alt="Voiz of Aram" className="logo-badge" style={{ height: 34 }} />
+          <img src={asset('/images/voiz-of-aram-logo.jpg')} alt="Voiz of Aram" className="logo-badge" style={{ height: 34 }} />
           <span className="logo-text">
             <span className="brand-name">Voiz of Aram</span>
             <small className="brand-tagline">Booth agent</small>

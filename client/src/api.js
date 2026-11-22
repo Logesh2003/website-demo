@@ -1,5 +1,10 @@
 const KEY = 'sethu.session';
 
+export const asset = (p) => {
+  const base = import.meta.env.BASE_URL || '/';
+  return `${base.endsWith('/') ? base : base + '/'}${p.replace(/^\//, '')}`;
+};
+
 export const session = {
   get() { try { return JSON.parse(localStorage.getItem(KEY)) || null; } catch { return null; } },
   set(s) { try { localStorage.setItem(KEY, JSON.stringify(s)); } catch { /* private mode */ } },

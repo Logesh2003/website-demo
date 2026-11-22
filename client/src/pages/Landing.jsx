@@ -2,7 +2,7 @@ import { useEffect, useMemo, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { useI18n } from '../i18n.jsx';
 import { SiteHeader, useToast } from '../components/ui.jsx';
-import { api, session, inr } from '../api.js';
+import { api, session, inr, asset } from '../api.js';
 
 const GST = 18;
 const FALLBACK_TIERS = [
@@ -112,7 +112,7 @@ export default function Landing() {
 
       <main id="main">
         <section className="photo-hero">
-          <img src="/images/hero-campaign.jpg" alt="Campaign coordinator with smartphone greeting a smiling family at their doorstep in Tamil Nadu during golden hour" fetchpriority="high" />
+          <img src={asset('/images/hero-campaign.jpg')} alt="Campaign coordinator with smartphone greeting a smiling family at their doorstep in Tamil Nadu during golden hour" fetchpriority="high" />
           <div className="photo-hero-shade" />
           <div className="container photo-hero-inner">
             <p className="eyebrow">{c.eyebrow}</p>
@@ -134,24 +134,24 @@ export default function Landing() {
 
         <div id="how">
           <Story k={c.s1k} title={c.s1t} body={c.s1d} bullets={c.s1b}
-            media={<figure className="shot shot-wide"><img src="/images/app-import.jpg" alt="Sethu import screen: a table of voters read from an electoral roll page, ready for review" loading="lazy" /></figure>} />
+            media={<figure className="shot shot-wide"><img src={asset('/images/app-import.jpg')} alt="Sethu import screen: a table of voters read from an electoral roll page, ready for review" loading="lazy" /></figure>} />
 
           <Story flip k={c.s2k} title={c.s2t} body={c.s2d} bullets={c.s2b}
             media={(
               <div className="duo">
-                <img className="duo-photo" src="/images/neighbours-thanjavur.jpg" alt="Neighbours talking on the steps of a house in Thanjavur" loading="lazy" />
-                <figure className="phone"><img src="/images/app-capture-phone.jpg" alt="Field capture on a phone: a photographed voter ID card with name and EPIC number filled in" loading="lazy" /></figure>
+                <img className="duo-photo" src={asset('/images/neighbours-thanjavur.jpg')} alt="Neighbours talking on the steps of a house in Thanjavur" loading="lazy" />
+                <figure className="phone"><img src={asset('/images/app-capture-phone.jpg')} alt="Field capture on a phone: a photographed voter ID card with name and EPIC number filled in" loading="lazy" /></figure>
               </div>
             )} />
 
           <Story k={c.s3k} title={c.s3t} body={c.s3d}
-            media={<figure className="shot shot-wide"><img src="/images/app-booths.jpg" alt="Booth strength map of Mylapore, booths coloured by support level" loading="lazy" /></figure>} />
+            media={<figure className="shot shot-wide"><img src={asset('/images/app-booths.jpg')} alt="Booth strength map of Mylapore, booths coloured by support level" loading="lazy" /></figure>} />
 
           <Story flip k={c.s4k} title={c.s4t} body={c.s4d}
             media={(
               <div className="duo duo-b">
-                <img className="duo-photo" src="/images/women-madurai.jpg" alt="Three women laying out appalam to dry at a small food unit in Madurai" loading="lazy" />
-                <figure className="shot shot-float"><img src="/images/app-voter.jpg" alt="Voter detail panel with sentiment, notes and the household on the same roll" loading="lazy" /></figure>
+                <img className="duo-photo" src={asset('/images/women-madurai.jpg')} alt="Three women laying out appalam to dry at a small food unit in Madurai" loading="lazy" />
+                <figure className="shot shot-float"><img src={asset('/images/app-voter.jpg')} alt="Voter detail panel with sentiment, notes and the household on the same roll" loading="lazy" /></figure>
               </div>
             )} />
         </div>
@@ -210,7 +210,7 @@ export default function Landing() {
         </section>
 
         <section className="end-band">
-          <img src="/images/street-madurai.jpg" alt="" loading="lazy" />
+          <img src={asset('/images/street-madurai.jpg')} alt="" loading="lazy" />
           <div className="end-band-shade" />
           <div className="container end-band-inner">
             <h2 className="display-sm">{c.endT}</h2>

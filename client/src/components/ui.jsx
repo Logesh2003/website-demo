@@ -1,6 +1,7 @@
 import { createContext, useCallback, useContext, useEffect, useId, useState, Children, cloneElement, isValidElement } from 'react';
 import { Link } from 'react-router-dom';
 import { useI18n } from '../i18n.jsx';
+import { asset } from '../api.js';
 import { num } from '../api.js';
 
 const P = {
@@ -39,7 +40,7 @@ export function Logo({ to = '/' }) {
   const { t } = useI18n();
   return (
     <Link to={to} className="logo" aria-label="Voiz of Aram home">
-      <img src="/images/voiz-of-aram-logo.jpg" alt="Voiz of Aram" className="logo-badge" />
+      <img src={asset('/images/voiz-of-aram-logo.jpg')} alt="Voiz of Aram" className="logo-badge" />
       <span className="logo-text">
         <span className="brand-name">{t('brand')}</span>
         <small className="brand-tagline">{t('tagline')}</small>

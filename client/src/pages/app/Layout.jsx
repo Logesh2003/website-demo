@@ -36,7 +36,7 @@ export default function Layout() {
         <div className="foot">
           {user && !user.isAdmin && (
             <div className="card" style={{ padding: 12, boxShadow: 'none' }}>
-              <div className="small" style={{ fontWeight: 700 }}>{user.fullName}</div>
+              <div className="small" style={{ fontWeight: 700 }}>{user.isDemo ? 'demo-candidate' : user.fullName}</div>
               <div className="small muted">{user.assemblyName} · {user.booths.length} booths</div>
               <div style={{ marginTop: 8 }}><PlanTag status={user.status} /></div>
             </div>

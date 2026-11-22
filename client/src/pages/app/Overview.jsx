@@ -19,7 +19,7 @@ export default function Overview() {
     <>
       <div className="topbar">
         <div>
-          <h1>Vanakkam, {user.fullName.split(' ')[0]}</h1>
+          <h1>Vanakkam, {user.isDemo ? 'demo-candidate' : user.fullName.split(' ')[0]}</h1>
           <div className="muted small">{d.assembly?.name}, {d.assembly?.district} · {d.totals.booths} booths in your plan</div>
         </div>
         <Countdown date={d.electionDate} onSaved={() => { reload(); refresh(); }} />

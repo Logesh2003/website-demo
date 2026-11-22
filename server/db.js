@@ -111,7 +111,7 @@ function seed(db) {
   if (!exists.get('9000000000')) {
     // Demo candidate: Mylapore (id 9), 12 booths, active plan.
     const booths = boothsFor(9).slice(0, 12).map((b) => b.no);
-    insert.run('9000000000', 'Demo Candidate', 'confirmed', 'independent', null, 'assembly', 'Chennai', 9,
+    insert.run('9000000000', 'demo-candidate', 'confirmed', 'independent', null, 'assembly', 'Chennai', 9,
       JSON.stringify(booths), hashSecret('demo1234'), 'active', 0, 1, nextElectionDate());
     const uid = db.prepare('SELECT id FROM users WHERE mobile = ?').get('9000000000').id;
     const v = db.prepare('INSERT INTO volunteers (user_id, name, mobile, booths) VALUES (?, ?, ?, ?)');
@@ -122,6 +122,8 @@ function seed(db) {
     t.run(uid, 'Verify missing mobile numbers', booths[2], 1, 'todo');
     t.run(uid, 'Senior citizens: arrange polling-day transport list', booths[5], 2, 'todo');
     t.run(uid, 'Booth committee meeting', booths[6], 2, 'done');
+  } else {
+    db.prepare("UPDATE users SET full_name = 'demo-candidate' WHERE mobile = '9000000000' OR is_demo = 1").run();
   }
   if (!exists.get('9999999999')) {
     insert.run('9999999999', 'Sethu Admin', null, null, null, null, null, null, '[]',

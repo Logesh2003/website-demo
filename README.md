@@ -1,6 +1,7 @@
-# Sethu: campaign workspace for Tamil Nadu candidates
+# Voiz of Aram: Public Voice. Real Action.
+### Booth-level campaign workspace for Tamil Nadu candidates
 
-Sethu gives candidates and their booth teams four things:
+**Voiz of Aram** gives candidates and their booth teams four things:
 - booth-level voter insights
 - voter tagging, with a household view
 - segmented outreach

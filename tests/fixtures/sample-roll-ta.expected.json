@@ -1,0 +1,137 @@
+[
+ {
+  "serial": 1,
+  "epic": "TNS4101680",
+  "nameTamil": "லட்சுமி ர",
+  "relationType": "Husband",
+  "houseNo": "12/4",
+  "age": 34,
+  "gender": "F"
+ },
+ {
+  "serial": 2,
+  "epic": "TNS4101717",
+  "nameTamil": "ரமேஷ் க",
+  "relationType": "Father",
+  "houseNo": "12/4",
+  "age": 39,
+  "gender": "M"
+ },
+ {
+  "serial": 3,
+  "epic": "TNS4101754",
+  "nameTamil": "செல்வி மு",
+  "relationType": "Father",
+  "houseNo": "15",
+  "age": 19,
+  "gender": "F"
+ },
+ {
+  "serial": 4,
+  "epic": "TNS4101791",
+  "nameTamil": "முருகன் சு",
+  "relationType": "Father",
+  "houseNo": "15",
+  "age": 52,
+  "gender": "M"
+ },
+ {
+  "serial": 5,
+  "epic": "TNS4101828",
+  "nameTamil": "வள்ளி மு",
+  "relationType": "Husband",
+  "houseNo": "15",
+  "age": 47,
+  "gender": "F"
+ },
+ {
+  "serial": 6,
+  "epic": "TNS4101865",
+  "nameTamil": "அருண் ப",
+  "relationType": "Father",
+  "houseNo": "18",
+  "age": 26,
+  "gender": "M"
+ },
+ {
+  "serial": 7,
+  "epic": "TNS4101902",
+  "nameTamil": "கவிதா அ",
+  "relationType": "Husband",
+  "houseNo": "18",
+  "age": 24,
+  "gender": "F"
+ },
+ {
+  "serial": 8,
+  "epic": "TNS4101939",
+  "nameTamil": "கோபால் வே",
+  "relationType": "Father",
+  "houseNo": "21",
+  "age": 68,
+  "gender": "M"
+ },
+ {
+  "serial": 9,
+  "epic": "TNS4101976",
+  "nameTamil": "மீனா கோ",
+  "relationType": "Husband",
+  "houseNo": "21",
+  "age": 63,
+  "gender": "F"
+ },
+ {
+  "serial": 10,
+  "epic": "TNS4102013",
+  "nameTamil": "சரவணன் கோ",
+  "relationType": "Father",
+  "houseNo": "21",
+  "age": 37,
+  "gender": "M"
+ },
+ {
+  "serial": 11,
+  "epic": "TNS4102050",
+  "nameTamil": "திவ்யா ச",
+  "relationType": "Father",
+  "houseNo": "21",
+  "age": 18,
+  "gender": "F"
+ },
+ {
+  "serial": 12,
+  "epic": "TNS4102087",
+  "nameTamil": "பிரகாஷ் ந",
+  "relationType": "Father",
+  "houseNo": "24",
+  "age": 44,
+  "gender": "M"
+ },
+ {
+  "serial": 13,
+  "epic": "TNS4102124",
+  "nameTamil": "ரேவதி பி",
+  "relationType": "Husband",
+  "houseNo": "24",
+  "age": 41,
+  "gender": "F"
+ },
+ {
+  "serial": 14,
+  "epic": "TNS4102161",
+  "nameTamil": "கார்த்திக் ரா",
+  "relationType": "Father",
+  "houseNo": "27",
+  "age": 29,
+  "gender": "M"
+ },
+ {
+  "serial": 15,
+  "epic": "TNS4102198",
+  "nameTamil": "அனிதா கு",
+  "relationType": "Father",
+  "houseNo": "30",
+  "age": 31,
+  "gender": "F"
+ }
+]

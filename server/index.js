@@ -7,8 +7,12 @@ import { createApp } from './app.js';
 const app = createApp();
 const dist = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../dist');
 if (fs.existsSync(dist)) {
-  app.use(express.static(dist, { index: false, maxAge: '1h' }));
-  app.get('*', (req, res) => res.sendFile(path.join(dist, 'index.html')));
+  const isProd = process.env.NODE_ENV === 'production';
+  app.use(express.static(dist, { index: false, maxAge: isProd ? '1h' : 0 }));
+  app.get('*', (req, res) => {
+    if (!isProd) res.set('Cache-Control', 'no-store');
+    res.sendFile(path.join(dist, 'index.html'));
+  });
 }
 
 const port = Number(process.env.PORT) || 5174;

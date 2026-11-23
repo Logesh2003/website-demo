@@ -1,3 +1,5 @@
+import { handleMockApi } from './mockApi.js';
+
 const KEY = 'sethu.session';
 
 export const asset = (p) => {
@@ -22,6 +24,20 @@ export class ApiError extends Error {
 }
 
 export async function api(path, { method = 'GET', body, raw, headers: extra } = {}) {
+  const isStatic = typeof window !== 'undefined' && (
+    window.location.hostname.endsWith('github.io') ||
+    window.location.protocol === 'file:' ||
+    window.__FORCE_MOCK__
+  );
+
+  if (isStatic) {
+    try {
+      return handleMockApi(path, { method, body, raw, headers: extra });
+    } catch (e) {
+      throw new ApiError(500, { error: 'MOCK_ERROR', message: e.message });
+    }
+  }
+
   const s = session.get();
   const headers = { ...(extra || {}) };
   if (body !== undefined) headers['Content-Type'] = 'application/json';
@@ -29,9 +45,24 @@ export async function api(path, { method = 'GET', body, raw, headers: extra } = 
   let res;
   try {
     res = await fetch(`/api${path}`, { method, headers, body: body !== undefined ? JSON.stringify(body) : undefined });
-  } catch {
-    throw new ApiError(0, { error: 'NETWORK', message: 'No connection. Check your internet and try again.' });
+  } catch (err) {
+    // If backend is not running or unreachable, fallback to mock API gracefully
+    try {
+      return handleMockApi(path, { method, body, raw, headers: extra });
+    } catch {
+      throw new ApiError(0, { error: 'NETWORK', message: 'No connection. Check your internet and try again.' });
+    }
   }
+
+  // Static host returning 404 or 405 for /api endpoints
+  if (res.status === 404 || res.status === 405) {
+    try {
+      return handleMockApi(path, { method, body, raw, headers: extra });
+    } catch (e) {
+      throw new ApiError(res.status, { error: 'NOT_FOUND', message: e.message });
+    }
+  }
+
   if (raw) {
     if (!res.ok) throw new ApiError(res.status, await res.json().catch(() => ({})));
     return res;
